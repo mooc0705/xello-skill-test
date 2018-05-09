@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Grid</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container">
+        <!--HEADER START-->
+        <div class="header">
+            <h1>High-School Diploma 2017</h1>
+            <p>
+                <span class="credit-left">14</span> Credits Left!
+            </p>
+            <div class="process">
+                <div class="process-border">
+                    <span class="process-fill" style="width:49.99%;"></span>
+                </div>
+                <p><span style="font-weight: bolder;color: #79b71d;">14</span> / 30</p>
+            </div>
+        </div>
+        <!--HEADER END-->
+
+        <!--FILTER BAR START-->
+        <div id="filter-bar">
+            <div class="col-md-4 right-border">
+                <div class="col-md-3">
+                    <p style="padding-top: 10px;">Requiments</p>
+                </div>
+                <div class="col-md-9">
+                    <select class="form-control" id="sel1">
+                        <option>Show All</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-md-5" style="padding-top: 10px;">
+                <div class="col-md-2">
+                    <p style="text-align: right;">Credits</p>
+                </div>
+                <div class="col-md-2">
+                    <label class="cus-box">All<input type="checkbox" >
+                    <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="col-md-2">
+                    <label class="cus-box">Earned<input type="checkbox" >
+                    <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="col-md-2">
+                    <label class="cus-box">Planned<input type="checkbox" >
+                    <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="col-md-2">
+                    <label class="cus-box">Remaining<input type="checkbox" >
+                    <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        <!--FILTER BAR END-->
+        <br>
+        <!--MAIN CONTENT START-->
+        <div id="mainContent">
+            <div class="col-md-3 acadamic-year">
+                <h2>YEAR 9 (next year)</h2>
+                <p>1 credit planned</p>
+                <div class="course-collection">
+                <div class="course">
+                    <p>English</p>
+                    <p><small>ENG1P1 | <span>English 9</span><span style="float:right;">1 cr.</span></small></p>
+                </div>
+                <div class="missing-req-detail">
+                    <p>This course requires a Pre-Requisite</p>
+                    <a href="#">Add one.</a>
+                    <div class="triangle-down"></div>
+                </div>
+                <div class="course">
+                    <p>Functions <span class="missing-req">!</span></p>
+                    <p><small>MAT1U1 | <span>Math 9</span><span style="float:right;">1 cr.</span></small></p>
+                </div>
+                <div class="add-course">
+                    <div class="add">+</div>
+                    <div class="add-course-title">
+                        <br>
+                        <p>Add Science 9</p>
+                        <p style="color:#333;"><small>1 cr.</small></p>
+                    </div>
+                </div>
+                <div class="add-course">
+                    <div class="add">+</div>
+                    <div class="add-course-title">
+                        <br>
+                        <p>Add Geography</p>
+                        <p style="color:#333;"><small>1 cr.</small></p>
+                    </div>
+                </div>
+                <div class="add-course">
+                    <div class="add">+</div>
+                    <div class="add-course-title">
+                        <br>
+                        <p>Add French</p>
+                        <p style="color:#333;"><small>1 cr.</small></p>
+                    </div>
+                </div>
+                <div class="add-course">
+                    <div class="add">+</div>
+                    <div class="add-course-title">
+                        <br>
+                        <p>Add Elective</p>
+                        <p style="color:#333;"><small>16 credits remaining</small></p>
+                    </div>
+                </div>
+                <div class="course-slot">
+                    <p>Available Slot</p>
+                </div>
+                <div class="course-slot">
+                    <p>Available Slot</p>
+                </div>
+                </div>
+
+                <div class="acadamic-year-footer">
+                    <br>
+                    <div class="outter-border center-block">
+                    <button class="btn submit-btn">Ready To Submit</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h2>YEAR 10</h2>
+                <p>0 credit planned</p>
+                <div class="course-slot">
+                    <p>Available Slot</p>
+                </div>
+                <div class="course-slot">
+                    <p>Available Slot</p>
+                </div>
+                <div class="course-slot">
+                    <p>Available Slot</p>
+                </div>
+                <div class="course-slot">
+                    <p>Available Slot</p>
+                </div>
+                <div class="course-slot">
+                    <p>Available Slot</p>
+                </div>
+                <div class="course-slot">
+                    <p>Available Slot</p>
+                </div>
+                <div class="course-slot">
+                    <p>Available Slot</p>
+                </div>
+                <div class="course-slot">
+                    <p>Available Slot</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h2>YEAR 11</h2>
+                <p>0 credit planned</p>
+                <div class="course-slot">
+                    <p>Available Slot</p>
+                </div>
+                <div class="course-slot">
+                    <p>Available Slot</p>
+                </div>
+                <div class="course-slot">
+                    <p>Available Slot</p>
+                </div>
+                <div class="course-slot">
+                    <p>Available Slot</p>
+                </div>
+                <div class="course-slot">
+                    <p>Available Slot</p>
+                </div>
+                <div class="course-slot">
+                    <p>Available Slot</p>
+                </div>
+                <div class="course-slot">
+                    <p>Available Slot</p>
+                </div>
+                <div class="course-slot">
+                    <p>Available Slot</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h2>YEAR 12</h2>
+                <p>0 credit planned</p>
+                <div class="course-slot">
+                    <p>Available Slot</p>
+                </div>
+                <div class="course-slot">
+                    <p>Available Slot</p>
+                </div>
+                <div class="course-slot">
+                    <p>Available Slot</p>
+                </div>
+                <div class="course-slot">
+                    <p>Available Slot</p>
+                </div>
+                <div class="course-slot">
+                    <p>Available Slot</p>
+                </div>
+                <div class="course-slot">
+                    <p>Available Slot</p>
+                </div>
+                <div class="course-slot">
+                    <p>Available Slot</p>
+                </div>
+                <div class="course-slot">
+                    <p>Available Slot</p>
+                </div>
+            </div>
+        </div>
+        <!--MAIN CONTENT END-->
+    </div>
+    <br>
+    <br>
+    <br>
+ 
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

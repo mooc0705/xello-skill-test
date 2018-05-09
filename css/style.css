@@ -1,0 +1,323 @@
+@font-face {
+  font-family: roboto-bold;
+  src: url("../fonts/roboto-bold-webfont.woff"); }
+
+@font-face {
+  font-family: roboto-light;
+  src: url("../fonts/roboto-light-webfont.woff"); }
+
+@font-face {
+  font-family: roboto-regular;
+  src: url("../fonts/roboto-regular-webfont.woff"); }
+
+@font-face {
+  font-family: roboto-black;
+  src: url("../fonts/roboto-black-webfont.woff"); }
+
+/* line 21, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+body {
+  color: #474748 !important; }
+
+/* line 25, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+.container {
+  width: 80%; }
+
+/* line 29, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+h1,
+h2 {
+  font-family: roboto-bold; }
+
+/* line 34, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+p {
+  font-family: roboto-regular;
+  font-size: 16px;
+  color: #9e9e9e; }
+
+/* line 40, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+.header {
+  margin-top: 20px; }
+  /* line 43, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+  .header p,
+  .header h1 {
+    display: inline-block;
+    padding-right: 30px; }
+
+/* line 52, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+.header h1 {
+  font-size: 30px;
+  padding-left: 3px; }
+
+/* line 57, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+.credit-left {
+  background-color: #d23859;
+  color: #ffffff;
+  border-radius: 24px;
+  padding: 3px 5px;
+  font-size: 17px;
+  margin-right: 5px; }
+
+/* line 66, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+.process {
+  float: right;
+  display: inline-flex;
+  margin-top: 30px; }
+  /* line 71, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+  .process p {
+    padding-right: 0; }
+
+/* line 78, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+.process-border {
+  height: 20px;
+  display: table;
+  width: 250px;
+  border: 1px solid #ededed;
+  border-radius: 3px;
+  position: relative;
+  margin-right: 15px; }
+  /* line 87, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+  .process-border span {
+    background: #81c320;
+    height: 20px;
+    display: table;
+    border-radius: 3px;
+    position: absolute;
+    top: 0px; }
+
+/* line 98, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+.process-fill {
+  transition: all .7s ease-in-out; }
+
+/* line 102, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+#filter-bar {
+  background-color: #f0f2f2;
+  height: 60px;
+  padding: 5px;
+  border: 1px solid #e4e4e4;
+  border-radius: 5px;
+  margin-top: 10px; }
+  /* line 110, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+  #filter-bar p {
+    font-size: 18px; }
+
+/* line 117, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+.form-control {
+  height: 47px;
+  border-radius: 6px;
+  font-family: roboto-light;
+  font-size: 18px; }
+
+/* line 124, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+.right-border {
+  border-right: 1px solid #e4e4e4; }
+
+/* line 128, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+label {
+  font-family: roboto-light;
+  font-size: 15px;
+  font-weight: 100; }
+
+/* line 134, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+.cus-box {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 17px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+/* line 147, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+.cus-box input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer; }
+
+/* line 153, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px; }
+
+/* line 164, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none; }
+
+/* line 170, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+.cus-box:hover input ~ .checkmark {
+  background-color: #eee; }
+
+/* line 174, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+.cus-box input:checked ~ .checkmark {
+  background-color: #81c320; }
+
+/* line 178, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+.cus-box input:checked ~ .checkmark:after {
+  display: block; }
+
+/* line 182, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+.cus-box .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+/* line 196, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+#mainContent {
+  margin-top: 10px; }
+  /* line 199, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+  #mainContent h2 {
+    font-size: 20px;
+    margin-bottom: 0;
+    padding: 10px; }
+  /* line 204, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+  #mainContent .acadamic-year {
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    border: 1px solid #ccc;
+    background-color: #f0f2f2;
+    transition: background-color 0.3s;
+    padding: 0; }
+    /* line 213, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+    #mainContent .acadamic-year p {
+      margin-left: 10px; }
+  /* line 217, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+  #mainContent .course-slot {
+    border-radius: 7px;
+    border: 1px dashed #ccc;
+    margin: 10px; }
+    /* line 222, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+    #mainContent .course-slot p {
+      padding: 15px;
+      margin-bottom: 0;
+      font-size: 16px;
+      color: #ccc; }
+  /* line 230, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+  #mainContent .course {
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    background-color: #fff;
+    margin: 10px;
+    padding: 10px;
+    border-left: 9px solid #81c320; }
+    /* line 238, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+    #mainContent .course p {
+      color: #333;
+      padding-bottom: 0;
+      margin-bottom: 0; }
+      /* line 242, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+      #mainContent .course p span {
+        color: #969696; }
+    /* line 247, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+    #mainContent .course .missing-req {
+      border: 1px solid #333;
+      background-color: #fe446b;
+      color: #ffffff;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      text-align: center;
+      float: right;
+      margin-right: 5px; }
+  /* line 261, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+  #mainContent .triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+    border-top: 23px solid #ffffff;
+    right: 15px;
+    position: absolute; }
+  /* line 270, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+  #mainContent .missing-req-detail {
+    display: none;
+    position: absolute;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    background-color: #fff;
+    margin-top: 10px;
+    width: 94%;
+    padding: 10px;
+    right: 11px;
+    top: 70px;
+    border-left: 9px solid #fe446b; }
+    /* line 283, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+    #mainContent .missing-req-detail a {
+      font-size: 18px; }
+  /* line 288, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+  #mainContent .add-course {
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    background-color: #fff;
+    margin: 10px;
+    padding: 0; }
+    /* line 295, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+    #mainContent .add-course .add {
+      background-color: #26afdf;
+      height: 68px;
+      padding-top: 6px;
+      width: 68px;
+      font-size: 45px;
+      text-align: center;
+      display: inline-block;
+      color: #ffffff;
+      border-radius: 8px 0px 0px 8px; }
+    /* line 307, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+    #mainContent .add-course .add-course-title {
+      display: inline-block;
+      padding-left: 12px; }
+    /* line 312, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+    #mainContent .add-course p {
+      color: #26afdf;
+      margin: 0;
+      font-weight: 400;
+      font-size: 19px;
+      line-height: 1; }
+  /* line 322, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+  #mainContent .acadamic-year-footer {
+    background-color: #26afdf;
+    height: 100px;
+    width: 100%;
+    border-radius: 0px 0px 8px 8px; }
+    /* line 328, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+    #mainContent .acadamic-year-footer .submit-btn {
+      background-color: #007aaf;
+      color: #fff;
+      font-family: roboto-light;
+      font-size: 20px; }
+
+/* line 337, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+.outter-border {
+  border: 1px solid #007aaf;
+  background-color: #26afdf;
+  width: 180px;
+  border-radius: 5px;
+  padding: 2px; }
+
+/* line 344, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+.course-collection {
+  background-color: #ffffff;
+  width: 99.99%;
+  padding: 20px 0; }
+
+@media screen and (max-width: 1600px) {
+  /* line 351, D:/MAMP/htdocs/Xello-Skill-test/scss/style.scss */
+  .cus-box {
+    font-size: 12px !important; } }
+
+/*# sourceMappingURL=style.css.map */
